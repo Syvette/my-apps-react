@@ -1,7 +1,7 @@
 // trial API main file
 const express =require("express");
 const app =express();
-const port = 6000;
+const port = 5001;
 
 //CRUD - get=read, post==create, put|patch==update, delete==delete
 // .get(), .post(), .put(), .delete(), .patch(),
