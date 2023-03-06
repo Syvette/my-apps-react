@@ -19,6 +19,12 @@ app.post("/hello",(req, res)=>{
     console.log(`Response sent...`);
 });
 
+let count=0;
+app.post("/counter", (req, res) => {
+    ++count;
+    res.send(`Current counter is ${count}.`);
+});
+
 app.listen(port, () => {
     console.log(`Trial-API listening on port ${port} was started successfully.`);
 });
