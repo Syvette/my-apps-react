@@ -1,25 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import './core.min.css';
+import TaskList from './component/Tasklist/TaskList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <TaskList />);
 }
 
+// class ==> className
+// style ==> style="attr:value;attr2:value2" ===> style {{attr: value, attr: value}}
+// style ==> border-bottom: 3px ===> borderBottom: 3px 
 export default App;
