@@ -1,13 +1,14 @@
 // import
 import React, { useState, useEffect, useMemo } from 'react';
 
+import './core.min.css';
 import './TaskList.css';
 
 import TaskItem from './TaskItem';
 import TaskCreate from './TaskCreate';
 
 const styles = {
-  body: { backgroundColor: '#eee' },
+  body: { backgroundColor: '#fff' },
   cardBody: {
     position: 'relative',
     height: '400px',
@@ -18,7 +19,7 @@ const styles = {
 const DEFAULT_TASK = [
   {
     id: 100,
-    avatar: 'highprio.webp',
+    avatar: 'high-prio.webp',
     name: 'Lean Jerios',
     description: 'Build Todo App',
     priority: 'high',
@@ -26,7 +27,7 @@ const DEFAULT_TASK = [
   },
   {
     id: 101,
-    avatar: 'lowprio.webp',
+    avatar: 'low-prio.webp',
     name: 'Andria Degoma',
     description: 'Feed the kittens',
     priority: 'low',
@@ -34,7 +35,7 @@ const DEFAULT_TASK = [
   },
   {
     id: 102,
-    avatar: 'medprio.webp',
+    avatar: 'mid-prio.webp',
     name: 'Czedrick Rodis',
     description: 'Play some games',
     priority: 'mid',
@@ -123,7 +124,7 @@ function TaskList() {
       <div className="container py-5 h-100">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-md-12 col-xl-10">
-            <div className="card">
+            <div className="card shadow-lg">
               <div className="card-header p-3">
                 <h5 className="mb-0">
                   <i className="fas fa-tasks me-2"></i>Task List

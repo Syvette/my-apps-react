@@ -1,14 +1,37 @@
-import React from "react"; // 'package name'
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import React from 'react'; // 'package name'
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import ErrorView from './component/Home/ErrorView';
+import TaskList from './component/Tasklist/TaskList';
+import Welcome from './component/Welcome/Welcome';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <ErrorView />,
+    children: [
+      {
+        path: '/projects/taskslist',
+        element: <TaskList />,
+      },
+      {
+        path: '/projects',
+        element: <Welcome />,
+      },
+    ],
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
+  <React.StrictMode>
+    {/* <App /> */}
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
 
 // <img />
@@ -20,7 +43,7 @@ root.render(
 reportWebVitals();
 
 // index.html
-// ^--- index.js
+// ^--- index.js  ----> hook router
 //        ^----- App.js
 //                  ^-------- TaskList
 //                               ^----- TaskItem
