@@ -9,14 +9,18 @@
     "mock-server": "node ./mock-server.js",
     "db-explore": "node ./src/index.js",
     "start": "node ./app.js",
-    "hotload" : "nodemon ./app.js"
+    "hotload": "nodemon ./app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@mocks-server/main": "^4.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "install": "^0.13.0",
     "mariadb": "^3.1.0",
-    "sequelize": "^6.29.0"
+    "nodemon": "^2.0.21",
+    "sequelize": "^6.29.1"
   }
 }

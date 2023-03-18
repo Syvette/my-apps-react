@@ -1,12 +1,12 @@
 // trial API main file
-const express =require("express");
-const app =express();
-const port = 5001;
+const express = require("express");
+const app = express();
+const port = 5000;
 
 //CRUD - get=read, post==create, put|patch==update, delete==delete
 // .get(), .post(), .put(), .delete(), .patch(),
-app.get("/",(req, res)=> {
-    res.send (`Hello World! Current port is ${port}`)
+app.get("/", (req, res)=> {
+    res.send (`Hello World! Current port is ${port}`);
 });  
 
 // app.post(arg1, arg2);

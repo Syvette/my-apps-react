@@ -22,7 +22,13 @@ function Home() {
           <ul>
             <li>
               {/* a href ---> Link to */}
-              <Link to={`/projects/taskslist`}>Tasks List</Link>
+              <Link to={`/projects/taskslist`}>Tasks List (Local)</Link>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              {/* a href ---> Link to */}
+              <Link to={`/projects/taskslistapi`}>Tasks List (API)</Link>
             </li>
           </ul>
         </nav>

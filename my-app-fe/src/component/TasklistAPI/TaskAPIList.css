@@ -1,0 +1,13 @@
+.table > :not(caption) > * > * {
+  padding: 1px !important;
+}
+
+.btn-group-sm > .btn-sm {
+  padding: 3px !important;
+  line-height: 12px !important;
+  height: 20px;
+}
+
+.btn-group-sm {
+  height: 20px;
+}

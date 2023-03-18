@@ -1,7 +1,7 @@
 const DEFAULT_TASKS = [
   {
     id: 100,
-    avatar: "highprio.webp",
+    avatar: "high-prio.webp",
     name: "Lean Jerios",
     description: "Build Todo App",
     priority: "high",
@@ -9,7 +9,7 @@ const DEFAULT_TASKS = [
   },
   {
     id: 101,
-    avatar: "lowprio.webp",
+    avatar: "low-prio.webp",
     name: "Andria Degoma",
     description: "Feed the kittens",
     priority: "low",
@@ -17,7 +17,7 @@ const DEFAULT_TASKS = [
   },
   {
     id: 102,
-    avatar: "medprio.webp",
+    avatar: "mid-prio.webp",
     name: "Czedrick Rodis",
     description: "Play some games",
     priority: "mid",

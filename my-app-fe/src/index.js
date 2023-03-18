@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ErrorView from './component/Home/ErrorView';
 import TaskList from './component/Tasklist/TaskList';
+import TaskAPIList from './component/TasklistAPI/TaskAPIList';
 import Welcome from './component/Welcome/Welcome';
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: '/projects/taskslist',
         element: <TaskList />,
+      },
+      {
+        path: '/projects/taskslistapi',
+        element: <TaskAPIList />,
       },
       {
         path: '/projects',

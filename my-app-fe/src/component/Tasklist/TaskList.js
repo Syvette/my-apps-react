@@ -120,7 +120,7 @@ function TaskList() {
   };
 
   return (
-    <section className="vh-100" style={styles.body}>
+    <section className="" style={styles.body}>
       <div className="container py-5 h-100">
         <div className="row d-flex justify-content-center align-items-center h-100">
           <div className="col-md-12 col-xl-10">

@@ -4,10 +4,10 @@ module.exports = (app) => {
   let router = require('express').Router();
 
   // crud
-  // create a task
+  // create a task*
   router.post('/', tasks.create);
 
-  // retrieve all tasks
+  // retrieve all tasks*
   router.get('/', tasks.findAll);
 
   // retrieve a single task
