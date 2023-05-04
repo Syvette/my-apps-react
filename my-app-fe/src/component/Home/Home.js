@@ -5,6 +5,7 @@ import './Home.css';
 function Home() {
   return (
     <>
+    
       <div id="sidebar">
         <h1>WD40P React App Collections</h1>
         <div>
